@@ -20,7 +20,21 @@ function decToBi(num) {
   }
   console.log(bin);
 }
+function binToDec (num){
+  let temp = [];
+  temp = num.toString().split("");
+  let arr = [];
+  temp = temp.reverse();
+  let kq = 0;
+  for (let i=0;i<temp.length;i++){
+    if(temp[i] == 1){
+      arr += 1 * Math.pow(2,i);
 
+    }
+
+  }
+  return kq;
+}
 
 
 module.exports = main;
